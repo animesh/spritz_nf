@@ -1,0 +1,76 @@
+test/
+├── fastqc
+│   ├── SAMPLE1_PE_T1_1_fastqc.html
+│   ├── SAMPLE1_PE_T1_1_fastqc.zip
+│   ├── SAMPLE1_PE_T1_2_fastqc.html
+│   ├── SAMPLE1_PE_T1_2_fastqc.zip
+│   ├── SAMPLE2_PE_T1_1_fastqc.html
+│   ├── SAMPLE2_PE_T1_1_fastqc.zip
+│   ├── SAMPLE2_PE_T1_2_fastqc.html
+│   ├── SAMPLE2_PE_T1_2_fastqc.zip
+│   ├── SAMPLE3_SE_T1_fastqc.html
+│   ├── SAMPLE3_SE_T1_fastqc.zip
+│   ├── SAMPLE3_SE_T2_fastqc.html
+│   └── SAMPLE3_SE_T2_fastqc.zip
+├── multiqc
+│   ├── multiqc_data
+│   │   ├── mqc_fastqc_overrepresented_sequences_plot_1.txt
+│   │   ├── mqc_fastqc_per_base_n_content_plot_1.txt
+│   │   ├── mqc_fastqc_per_base_sequence_quality_plot_1.txt
+│   │   ├── mqc_fastqc_per_sequence_gc_content_plot_Counts.txt
+│   │   ├── mqc_fastqc_per_sequence_gc_content_plot_Percentages.txt
+│   │   ├── mqc_fastqc_per_sequence_quality_scores_plot_1.txt
+│   │   ├── mqc_fastqc_sequence_counts_plot_1.txt
+│   │   ├── mqc_fastqc_sequence_duplication_levels_plot_1.txt
+│   │   ├── mqc_fastqc_sequence_length_distribution_plot_1.txt
+│   │   ├── multiqc_citations.txt
+│   │   ├── multiqc_data.json
+│   │   ├── multiqc_fastqc.txt
+│   │   ├── multiqc_general_stats.txt
+│   │   ├── multiqc.log
+│   │   └── multiqc_sources.txt
+│   ├── multiqc_plots
+│   │   ├── pdf
+│   │   │   ├── mqc_fastqc_overrepresented_sequences_plot_1.pdf
+│   │   │   ├── mqc_fastqc_per_base_n_content_plot_1.pdf
+│   │   │   ├── mqc_fastqc_per_base_sequence_quality_plot_1.pdf
+│   │   │   ├── mqc_fastqc_per_sequence_gc_content_plot_Counts.pdf
+│   │   │   ├── mqc_fastqc_per_sequence_gc_content_plot_Percentages.pdf
+│   │   │   ├── mqc_fastqc_per_sequence_quality_scores_plot_1.pdf
+│   │   │   ├── mqc_fastqc_sequence_counts_plot_1_pc.pdf
+│   │   │   ├── mqc_fastqc_sequence_counts_plot_1.pdf
+│   │   │   ├── mqc_fastqc_sequence_duplication_levels_plot_1.pdf
+│   │   │   └── mqc_fastqc_sequence_length_distribution_plot_1.pdf
+│   │   ├── png
+│   │   │   ├── mqc_fastqc_overrepresented_sequences_plot_1.png
+│   │   │   ├── mqc_fastqc_per_base_n_content_plot_1.png
+│   │   │   ├── mqc_fastqc_per_base_sequence_quality_plot_1.png
+│   │   │   ├── mqc_fastqc_per_sequence_gc_content_plot_Counts.png
+│   │   │   ├── mqc_fastqc_per_sequence_gc_content_plot_Percentages.png
+│   │   │   ├── mqc_fastqc_per_sequence_quality_scores_plot_1.png
+│   │   │   ├── mqc_fastqc_sequence_counts_plot_1_pc.png
+│   │   │   ├── mqc_fastqc_sequence_counts_plot_1.png
+│   │   │   ├── mqc_fastqc_sequence_duplication_levels_plot_1.png
+│   │   │   └── mqc_fastqc_sequence_length_distribution_plot_1.png
+│   │   └── svg
+│   │       ├── mqc_fastqc_overrepresented_sequences_plot_1.svg
+│   │       ├── mqc_fastqc_per_base_n_content_plot_1.svg
+│   │       ├── mqc_fastqc_per_base_sequence_quality_plot_1.svg
+│   │       ├── mqc_fastqc_per_sequence_gc_content_plot_Counts.svg
+│   │       ├── mqc_fastqc_per_sequence_gc_content_plot_Percentages.svg
+│   │       ├── mqc_fastqc_per_sequence_quality_scores_plot_1.svg
+│   │       ├── mqc_fastqc_sequence_counts_plot_1_pc.svg
+│   │       ├── mqc_fastqc_sequence_counts_plot_1.svg
+│   │       ├── mqc_fastqc_sequence_duplication_levels_plot_1.svg
+│   │       └── mqc_fastqc_sequence_length_distribution_plot_1.svg
+│   └── multiqc_report.html
+└── pipeline_info
+    ├── execution_report_2023-10-17_12-53-07.html
+    ├── execution_timeline_2023-10-17_12-53-07.html
+    ├── execution_trace_2023-10-17_12-53-07.txt
+    ├── params_2023-10-17_12-54-00.json
+    ├── pipeline_dag_2023-10-17_12-53-07.html
+    ├── samplesheet.valid.csv
+    └── software_versions.yml
+
+8 directories, 65 files
