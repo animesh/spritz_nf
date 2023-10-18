@@ -32,10 +32,12 @@ module load Miniconda3/22.11.1-1
 #git checkout dev
 #git remote add origin https://github.com/animesh/spritz_nf.git
 #git push --all origin
+#ln -s /cluster/projects/nn9036k/scripts/TK9/*.gz .
+#vim samples.csv
 conda activate nf-core
 #nextflow  self-update
 nextflow  -v
 #nextflow run hello
  
-nextflow main.nf -profile test,singularity --outdir test
+nextflow main.nf -profile singularity --genome GRCh38 --input samples.csv --outdir rnaHG38sa
 

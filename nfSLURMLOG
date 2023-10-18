@@ -192,3 +192,252 @@ ID              Alloc   Usage
 9742457.batch    80.0     1.3
 
 Job 9742457 completed at Tue Oct 17 12:54:02 CEST 2023
+Starting job 9744298 on c1-55 on saga at Wed Oct 18 13:02:15 CEST 2023
+
+we are running from this directory: /cluster/projects/nn9036k/nfsp/nf-core-spritz
+ the name of the job is: NF
+Th job ID is 9744298
+The job was run on these nodes: c1-55
+Number of nodes: 1
+We are using 10 cores
+We are using 10 cores per node
+Total of 1 cores
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+nextflow version 23.10.0.5889
+N E X T F L O W  ~  version 23.10.0
+Launching `main.nf` [goofy_mahavira] DSL2 - revision: e4d5ab7876
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/spritz v1.0dev
+------------------------------------------------------
+Core Nextflow options
+  runName        : goofy_mahavira
+  containerEngine: singularity
+  launchDir      : /cluster/projects/nn9036k/nfsp/nf-core-spritz
+  workDir        : /cluster/projects/nn9036k/nfsp/nf-core-spritz/work
+  projectDir     : /cluster/projects/nn9036k/nfsp/nf-core-spritz
+  userName       : ash022
+  profile        : singularity
+  configFiles    : 
+
+Input/output options
+  input          : samples.csv
+  outdir         : rnaHG38sa
+
+Reference genome options
+  genome         : GRCh38
+  fasta          : s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+If you use nf-core/spritz for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/spritz/blob/master/CITATIONS.md
+
+[-        ] process > NFCORE_SPRITZ:SPRITZ:INPUT_... -
+
+[-        ] process > NFCORE_SPRITZ:SPRITZ:INPUT_... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+[-        ] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
+[-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (1)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
+[-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (1)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
+[-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (2)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[f5/22a31f] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 2
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (3)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[db/5b43f2] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 2
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (3)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[db/5b43f2] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 5
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (4)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[18/19b6f3] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 5
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (4)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[18/19b6f3] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 5
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (4)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[18/19b6f3] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (5)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[8f/06e667] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (5)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[8f/06e667] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [  0%] 0 of 1
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (6)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[8f/06e667] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [  0%] 0 of 1
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (6)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[8f/06e667] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (6)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[f5/22a31f] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 33%] 2 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (7)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[cd/09bbbf] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 33%] 2 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (8)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 50%] 3 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (8)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 50%] 3 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (8)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[8f/06e667] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 66%] 4 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (8)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[cd/09bbbf] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 83%] 5 of 6
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+
+executor >  local (8)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [  0%] 0 of 1
+
+executor >  local (9)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[c1/002f93] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [  0%] 0 of 1
+
+executor >  local (9)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[c1/002f93] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
+
+executor >  local (9)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[c1/002f93] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
+-[nf-core/spritz] Pipeline completed successfully-
+
+executor >  local (9)
+[a7/cabdd0] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[ca/2b29fc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
+[09/c387a8] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
+[c1/002f93] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
+-[nf-core/spritz] Pipeline completed successfully-
+Completed at: 18-Oct-2023 13:16:52
+Duration    : 14m 3s
+CPU hours   : 3.2
+Succeeded   : 9
+
+
+
+Job 9744298 consumed 4.9 billing hours from project nn9036k.
+
+Submitted 2023-10-18T13:02:15; waited 0.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 2.0 days
+Elapsed wallclock time:   14.6 minutes
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+9744298          10            0.0 %  2023-10-18T13:02:15  878.0 s  0
+9744298.batch    10      1    43.6 %  2023-10-18T13:02:15  878.0 s  0
+
+Used CPU time:   1.1 CPU hours
+Unused CPU time: 1.4 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+9744298          80.0        
+9744298.batch    80.0     7.4
+
+Job 9744298 completed at Wed Oct 18 13:16:53 CEST 2023
