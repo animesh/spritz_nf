@@ -2,7 +2,7 @@
 #SBATCH --account=nn9036k --job-name=NF
 #SBATCH --time=48:00:00
 ##SBATCH --partition=bigmem
-#SBATCH --ntasks=1 --cpus-per-task=10
+#SBATCH --ntasks=2 --cpus-per-task=10
 #SBATCH --mem-per-cpu=8G
 #SBATCH --mail-user=animesh.sharma@ntnu.no
 #SBATCH --mail-type=ALL
@@ -32,12 +32,13 @@ module load Miniconda3/22.11.1-1
 #git checkout dev
 #git remote add origin https://github.com/animesh/spritz_nf.git
 #git push --all origin
-#ln -s /cluster/projects/nn9036k/scripts/TK9/*.gz .
+#ln -s /cluster/projects/nn9036k/scripts/TK9/trimmomatic.1697725340.results/TK9_*P.fq.gz .
 #vim samples.csv
 conda activate nf-core
 #nextflow  self-update
 nextflow  -v
 #nextflow run hello
  
-nextflow main.nf -profile singularity --genome GRCh38 --input samples.csv --outdir rnaHG38sa
+nextflow main.nf -profile singularity --genome GRCh37 --input samples.csv --outdir trimResHG37
+
 
