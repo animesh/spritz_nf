@@ -2,7 +2,7 @@
 #SBATCH --account=nn9036k --job-name=NF
 #SBATCH --time=24:00:00
 ##SBATCH --partition=bigmem
-#SBATCH --ntasks=4 --cpus-per-task=10
+#SBATCH --ntasks=2 --cpus-per-task=10
 #SBATCH --mem-per-cpu=4G
 #SBATCH --mail-user=animesh.sharma@ntnu.no
 #SBATCH --mail-type=ALL
@@ -39,7 +39,7 @@ conda activate nf-core
 nextflow  -v
 #nextflow run hello
  
-nextflow main.nf --max_memory '160.GB' --max_cpus 40 -profile singularity --genome GRCh38 --input samples.csv --outdir rnaHG38sa
+nextflow main.nf --max_memory '160.GB' --max_cpus 20 -profile singularity --genome GRCh38 --input samples.csv --outdir rnaHG38sa
 #rm -rf rnaHG38sa
 #mv trimResHG38 rnaHG38sa
 #rsync -Parv  login.nird-lmd.sigma2.no:PD/Animesh/TK/TK9R/
@@ -49,7 +49,7 @@ nextflow main.nf --max_memory '160.GB' --max_cpus 40 -profile singularity --geno
 #dos2unix scratch.slurm slurmTM.sh
 #bash slurmTM.sh $PWD/TK9R
 #cd $HOME/cluster/nfsp/nf-core-spritz
-#cp $HOME/scripts/TK9R/trimmomatic.1701245572.results/TK9_*P.fq.gz  .
+#ln -s $HOME/scripts/TK9R/trimmomatic.1701258726.results/*P.fq.gz 
 #rm *R1.fastq.gz
 #rename 'R.1P.fq' 'R1.fastq.gz' *
 #rm *R2.fastq.gz
@@ -63,4 +63,3 @@ nextflow main.nf --max_memory '160.GB' --max_cpus 40 -profile singularity --geno
 #cat samples.csv
 #rm nfSLURMLOG
 #sbatch scratch.slurm
-#cp -rf TK9RHG37/multiqc rnaHG38sa/.
