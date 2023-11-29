@@ -1,13 +1,13 @@
-Starting job 10056337 on c1-[1,27] on saga at Tue Nov 28 11:42:07 CET 2023
+Starting job 10062906 on c2-[7,20] on saga at Wed Nov 29 11:11:18 CET 2023
 
 we are running from this directory: /cluster/projects/nn9036k/nfsp/nf-core-spritz
  the name of the job is: NF
-Th job ID is 10056337
-The job was run on these nodes: c1-[1,27]
+Th job ID is 10062906
+The job was run on these nodes: c2-[7,20]
 Number of nodes: 2
-We are using 10 cores
-We are using 10 cores per node
-Total of 2 cores
+We are using 20 cores
+We are using 20 cores per node
+Total of 4 cores
 
 CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
 To initialize your shell, run
@@ -29,8 +29,7 @@ IMPORTANT: You may need to close and restart your shell after running 'conda ini
 
 nextflow version 23.10.0.5889
 N E X T F L O W  ~  version 23.10.0
-Launching `main.nf` [peaceful_lamport] DSL2 - revision: e4d5ab7876
-Downloading plugin nf-validation@1.1.3
+Launching `main.nf` [ecstatic_hodgkin] DSL2 - revision: e4d5ab7876
 
 
 ------------------------------------------------------
@@ -42,7 +41,7 @@ Downloading plugin nf-validation@1.1.3
   nf-core/spritz v1.0dev
 ------------------------------------------------------
 Core Nextflow options
-  runName        : peaceful_lamport
+  runName        : ecstatic_hodgkin
   containerEngine: singularity
   launchDir      : /cluster/projects/nn9036k/nfsp/nf-core-spritz
   workDir        : /cluster/projects/nn9036k/nfsp/nf-core-spritz/work
@@ -53,14 +52,14 @@ Core Nextflow options
 
 Input/output options
   input          : samples.csv
-  outdir         : TK9RHG37
+  outdir         : rnaHG38sa
 
 Reference genome options
-  genome         : GRCh37
-  fasta          : s3://ngi-igenomes/igenomes/Homo_sapiens/Ensembl/GRCh37/Sequence/WholeGenomeFasta/genome.fa
+  genome         : GRCh38
+  fasta          : s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
 
 Max job request options
-  max_cpus       : 20
+  max_cpus       : 40
   max_memory     : 160.GB
 
 !! Only displaying parameters that differ from the pipeline defaults !!
@@ -78,197 +77,50 @@ If you use nf-core/spritz for your analysis please cite:
 [-        ] process > NFCORE_SPRITZ:SPRITZ:INPUT_... -
 [-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
 [-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
 
-[-        ] process > NFCORE_SPRITZ:SPRITZ:INPUT_... -
+[-        ] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
 [-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
 [-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
 [-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
 
 executor >  local (1)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
+[ba/75e550] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
 [-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (1)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [  0%] 0 of 1
-[-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (1)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:FASTQC    [  0%] 0 of 6
 [-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
 [-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
 
 executor >  local (2)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[c1/974231] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
+[ba/75e550] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[00/d281f2] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
 [-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (2)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[c1/974231] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (3)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[77/d11945] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (4)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[70/af9bcc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (5)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[70/af9bcc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (5)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[70/af9bcc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
-[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [  0%] 0 of 1
 [-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
 
 executor >  local (6)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[70/af9bcc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [  0%] 0 of 1
+[ba/75e550] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
+[60/575442] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [  0%] 0 of 6
+[-        ] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... -
 [-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+slurmstepd: error: *** JOB 10062906 ON c2-7 CANCELLED AT 2023-11-29T11:16:17 ***
 
-executor >  local (6)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[70/af9bcc] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 16%] 1 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+Job 10062906 consumed 3.4 billing hours from project nn9036k.
 
-executor >  local (6)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[77/d11945] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 33%] 2 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
+Submitted 2023-11-29T11:11:11; waited 7.0 seconds in the queue after becoming eligible to run.
 
-executor >  local (7)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[95/078904] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 33%] 2 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (7)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[c1/974231] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 50%] 3 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (8)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 50%] 3 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (8)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 50%] 3 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (8)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[95/078904] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 66%] 4 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (8)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[59/09dab5] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [ 83%] 5 of 6
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (8)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   -
-
-executor >  local (8)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[-        ] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [  0%] 0 of 1
-
-executor >  local (9)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[d1/eb22c7] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [  0%] 0 of 1
-
-executor >  local (9)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[d1/eb22c7] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [  0%] 0 of 1
-
-executor >  local (9)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[d1/eb22c7] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
-
-executor >  local (9)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[d1/eb22c7] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
-Waiting for file transfers to complete (1 files)
-
-executor >  local (9)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[d1/eb22c7] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
-Waiting for file transfers to complete (1 files)
--[nf-core/spritz] Pipeline completed successfully-
-
-executor >  local (9)
-[3e/6a0943] process > NFCORE_SPRITZ:SPRITZ:INPUT_... [100%] 1 of 1 ✔
-[d4/656a4e] process > NFCORE_SPRITZ:SPRITZ:FASTQC... [100%] 6 of 6 ✔
-[93/b1a532] process > NFCORE_SPRITZ:SPRITZ:CUSTOM... [100%] 1 of 1 ✔
-[d1/eb22c7] process > NFCORE_SPRITZ:SPRITZ:MULTIQC   [100%] 1 of 1 ✔
-Waiting for file transfers to complete (1 files)
--[nf-core/spritz] Pipeline completed successfully-
-Completed at: 28-Nov-2023 12:11:49
-Duration    : 28m 44s
-CPU hours   : 7.9
-Succeeded   : 9
-
-
-
-Job 10056337 consumed 20.3 billing hours from project nn9036k.
-
-Submitted 2023-11-28T11:41:59; waited 7.0 seconds in the queue after becoming eligible to run.
-
-Requested wallclock time: 4.0 days
-Elapsed wallclock time:   29.7 minutes
+Requested wallclock time: 24.0 hours
+Elapsed wallclock time:   5.0 minutes
 
 Task and CPU statistics:
-ID              CPUs  Tasks  CPU util                Start   Elapsed  Exit status
-10056337          20            0.0 %  2023-11-28T11:42:06  1784.0 s  0
-10056337.batch    10      1    48.3 %  2023-11-28T11:42:06  1784.0 s  0
+ID              CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+10062906          40            0.0 %  2023-11-29T11:11:18  299.0 s  0
+10062906.batch    20      1    41.9 %  2023-11-29T11:11:18  300.0 s  Signal 15
 
-Used CPU time:   2.4 CPU hours
-Unused CPU time: 7.5 CPU hours
+Used CPU time:   41.9 CPU minutes
+Unused CPU time: 2.6 CPU hours
 
 Memory statistics, in GiB:
 ID               Alloc   Usage
-10056337         160.0        
-10056337.batch    80.0     4.2
+10062906         160.0        
+10062906.batch    80.0     6.4
 
-Job 10056337 completed at Tue Nov 28 12:11:50 CET 2023
+Job 10062906 completed at Wed Nov 29 11:16:19 CET 2023
