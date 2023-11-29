@@ -1,6 +1,6 @@
 #!/bin/sh
 #SBATCH --account=nn9036k --job-name=NF
-#SBATCH --time=48:00:00
+#SBATCH --time=96:00:00
 ##SBATCH --partition=bigmem
 #SBATCH --ntasks=2 --cpus-per-task=10
 #SBATCH --mem-per-cpu=8G
@@ -39,6 +39,16 @@ conda activate nf-core
 nextflow  -v
 #nextflow run hello
  
-nextflow main.nf -profile singularity --genome GRCh37 --input samples.csv --outdir trimResHG37
+nextflow main.nf --max_memory '160.GB' --max_cpus 20 -profile singularity --genome GRCh37 --input samples.csv --outdir TK9RHG37
 
-
+#rsync -Parv  login.nird-lmd.sigma2.no:PD/Animesh/TK/TK9R/
+#mv TK9R/* .
+#ls -1 *R1*gz > S1
+#ls -1 *R2*gz > S2
+#printf 'auto\n%.0s' {1..6} > S3
+#echo "sample,fastq_1,fastq_2,strandedness" > samples.csv
+#paste -d ','  S? >> samples.csv
+#cat samples.csv
+#rm nfSLURMLOG
+#sbatch scratch.slurm
+#cp -rf TK9RHG37/multiqc rnaHG38sa/.
